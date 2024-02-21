@@ -10,7 +10,7 @@ export default function NotFoundPage() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    getMessage(params.id as string)
+    getMessage(params.id)
       .then(setMessage)
       .finally(console.log); // Adding this line will make it work
   }, [params.id]);
